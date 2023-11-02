@@ -133,7 +133,8 @@ You will have to go back to your db/dbConfig.js file and add `password: process.
 
 Then save changes. You must wait a few minutes for the changes to take effect.
 
-To see the data from the database, go to the URL for your deployed app and add `/test` to the end of the URL. You should see an array of days of the week.
+To see the data from the database, go to the URL for your deployed app and add the path to "GET all"
+Ex: "https://colors-api1.onrender.com/colors"
 
 ![See data from database in the browser](./assets/see-data-in-browser.png)
 
