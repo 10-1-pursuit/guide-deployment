@@ -16,14 +16,6 @@ Finally, your apps will "go to sleep" when they are not actively used. So when y
 
 [Render](https://render.com)
 
-## Start with the template repository
-
-Select `use this template` from the [Pern final project template](https://github.com/joinpursuit/template-pern-project) on GitHub to get started on your new project. You should be putting this template in your personal GitHub account and not in an organization. The repository should be public. This repository has the correct file structure and configurations to deploy the application to Render as is.
-
-Get this app to run locally to test that it works. If it does not work locally, it will not work online. Follow the instructions in the application's `README.md` file.
-
-Then, after working through this guide, and you have deployed the template and confirmed it works, you should begin building your application, replacing the boilerplate code with your own.
-
 ## Getting started with deployment
 
 Log in to Render with GitHub.
@@ -38,7 +30,7 @@ You will then be taken to a new view. You must set up each field correctly.
 
 - Create a unique name for your app. This name will be included in the public URL to share with people.
 
-- Use `back-end` for the root directory
+- Use `./` for the root directory
 - Select environment: `node`
 - Choose a region in the United States, preferably one on the East Coast.
 - Select branch: `main`
@@ -136,6 +128,8 @@ You will need to enter the following:
 - `DATABASE_URL` : use the value for `Internal Database URL`
 
 ![Add key values for environmental variables for server app](./assets/add-environmental-variables-to-app.png)
+
+You will have to go back to your db/dbConfig.js file and add `password: process.env.PG_PASSWORD` to your connection object (cn)
 
 Then save changes. You must wait a few minutes for the changes to take effect.
 
